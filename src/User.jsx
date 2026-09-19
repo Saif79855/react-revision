@@ -1,10 +1,13 @@
 
 
-function User({ name}) {
+function User({ data}) {
     
   return (
     <div>
-      <h1>Name:-{name}</h1>
+      <h3>Id:-{data.id}</h3>
+      <h3>Name:-{data.name}</h3>
+      <h3>Age:-{data.age}</h3>
+      <h3>Email:-{data.email}</h3>
      
     </div>
   );

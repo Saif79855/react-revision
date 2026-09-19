@@ -1,17 +1,19 @@
-import Skills from "./Skills";
-
-
+import { useRef } from "react";
 function App() {
+  const countRef = useRef(0);
+
+  function increase() {
+    countRef.current = countRef.current + 1;
+    console.log(countRef.current);
+  }
 
   return (
-          <div>
-            <h1>
-              CheckBox Handling
-            </h1>
-             <Skills />
-          </div>
+    <>
+      {/* <p>{countRef.current}</p> */}
+
+      <button onClick={increase}>Increase</button>
+    </>
   );
 }
 
 export default App;
-
